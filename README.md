@@ -24,4 +24,32 @@ O enunciado completo e os dados estão em [`Grupo_12_-_T1_-_Felipe_Mareque_e_Mig
 
 ## Tecnologias
 
-O trabalho será feito em **Python**.
+O trabalho será feito em **Python** (pandas, numpy, scipy, matplotlib).
+
+## Estrutura
+
+```
+├── data/
+│   └── dados.csv                    # 78 execuções transcritas do enunciado
+├── src/
+│   ├── carregar_dados.py            # leitura do CSV
+│   ├── q1_classificacao.py
+│   ├── q2_medidas_descritivas.py
+│   ├── q3_tabela_dupla_entrada.py
+│   ├── q4_boxplot.py
+│   └── q5_histograma.py
+├── outputs/
+│   ├── figuras/                     # gráficos gerados (box plot, histograma)
+│   └── tabelas/                     # tabelas geradas
+├── main.py                          # executa todas as questões
+└── requirements.txt
+```
+
+## Como executar
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate        # Windows
+pip install -r requirements.txt
+python main.py
+```
